@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+#search-box {
+  font: inherit;
+  padding: 8px;
+  max-width: 320px;
+  /* margin-bottom: 16px; */
+}
+
+.country {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+img {
+  border: 1px solid rgba(219, 215, 215, 0.925);
+  margin-right: 10px;
+  height: 100%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+}
+
+.name {
+  font-weight: 700;
+}
+
+.name-countries {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.big-img {
+  width: 250px;
+}
+
+.country.big-country {
+  display: block;
+}
+.big-country .name-countries {
+  text-align: center;
+  font-size: 50px;
+}
+.big-country img {
+  display: block;
+  width: 600px;
+  /* margin-left: 250px; */
+  margin: 0 auto;
+}
+
+/* asdasdasads */
+.group {
+  display: flex;
+  align-items: center;
+}
+
+.lds-ring.is-hiden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.lds-ring {
+  position: absolute;
+  top: center;
+  left: 50px;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fcf;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fcf transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
